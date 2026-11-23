@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครชมรม</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>สมัครชมรม</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">โปรไฟล์</a>
+        <a href="../../index.html">กลับหน้าพอร์ต</a>
+    </nav>
+    <main>
+        <form method="get">
+            <p>
+                <label for="fullname">ชื่อ-นามสกุล</label>
+                <input type="text" id="fullname" name="fullname" placeholder="คุณากรณ์ ใจกล้า" required>
+            </p>
+            <p>
+                <label for="studentid">รหัสนักเรียน</label>
+                <input type="text" id="studentid" name="studentid" placeholder="6xxxxxxxxx" required>
+            </p>
+            <p>ชั้นเรียน:
+                <input type="radio" id="m4" name="grade" value="ม.4" required>
+                <label for="m4">ม.4</label>
+                <input type="radio" id="m5" name="grade" value="ม.5">
+                <label for="m5">ม.5</label>
+                <input type="radio" id="m6" name="grade" value="m6">
+                <label for="m6">ม.6</label>
+            </p>
+
+            <p>
+                <label for="time">ว่างช่วงไหน</label>
+                <select id="time" name="time" required>
+                    <option value="">------- เลือกวัน -------</option>
+                    <option value="mon">จันทร์ หลังเลิกเรียน</option>
+                    <option value="tue">อังคาร หลังเลิกเรียน</option>
+                    <option value="sun">อาทิตย์ ช่วงเช้า</option>
+                </select>
+            </p>
+            <p>
+                <label for="reason">ทำไมอยากเข้าชมรม</label><br>
+                <textarea id="reason" name="reason" rows="10" cols="70" placeholder="เล่าแบบย่อๆ"></textarea>
+            </p>
+
+            <p>
+                <label for="email">อีเมล</label>
+                <input type="email" id="email" name="email" placeholder="xxxxxxx@gmail.com" required>
+            </p>
+            <button type="submit">สมัครชมรม</button>
+        </form>
+    </main>
+    <footer>
+        <p>
+            ติดต่อ: kunakorn.jaik@dome.tu.ac.th
+        </p>
+
+
+</body>
+
+</html>
